@@ -90,7 +90,3 @@ if {"Expiration", "Profit/Loss"}.issubset(pnl_df.columns):
     st.plotly_chart(fig, use_container_width=True)
 else:
     st.warning("This database needs columns named **Expiration** (Date) and **Profit/Loss** (Number).")
-
-# Show raw data table
-st.markdown("### Raw data")
-st.dataframe(pnl_df, use_container_width=True)
