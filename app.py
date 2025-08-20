@@ -84,7 +84,7 @@ if {"Expiration", "Profit/Loss"}.issubset(pnl_df.columns):
         x="Expiration",
         y="Profit/Loss",
         markers=True,
-        title="Profit/Loss grouped by Expiration",
+        title="Weekly Profit and Loss",
     )
     fig.update_layout(xaxis_title="Expiration", yaxis_title="Total Profit/Loss")
     st.plotly_chart(fig, use_container_width=True)
