@@ -40,7 +40,7 @@ def fetch_notion_df(database_id: str) -> pd.DataFrame:
 
 # ---------- UI ----------
 st.set_page_config(page_title="Profit/Loss by Expiration", layout="wide")
-st.title("📈 Profit / Loss by Expiration")
+st.title("📈 Weekly Profit and Loss")
 
 with st.sidebar:
     st.caption("Data source: Notion")
@@ -78,7 +78,7 @@ if {"Expiration", "Profit/Loss"}.issubset(pnl_df.columns):
               .groupby("Expiration", as_index=False)["Profit/Loss"].sum()
               .sort_values("Expiration")
     )
-    st.subheader("Profit/Loss grouped by Expiration")
+
     fig = px.line(
         agg_by_exp,
         x="Expiration",
