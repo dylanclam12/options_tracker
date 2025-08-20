@@ -79,11 +79,6 @@ if {"Expiration", "Profit/Loss"}.issubset(pnl_df.columns):
               .sort_values("Expiration")
     )
 
-    # Format Profit/Loss as $ string for annotation
-    agg_by_exp["Profit/Loss $"] = agg_by_exp["Profit/Loss"].apply(
-        lambda x: "${:,.2f}".format(x) if pd.notnull(x) else ""
-    )
-
     fig = px.line(
         agg_by_exp,
         x="Expiration",
@@ -92,18 +87,6 @@ if {"Expiration", "Profit/Loss"}.issubset(pnl_df.columns):
         title="Weekly Profit and Loss",
     )
     fig.update_layout(xaxis_title="Expiration", yaxis_title="Total Profit/Loss")
-
-    # Add annotations above each point
-    for i, row in agg_by_exp.iterrows():
-        fig.add_annotation(
-            x=row["Expiration"],
-            y=row["Profit/Loss"],
-            text=row["Profit/Loss $"],
-            showarrow=False,
-            yshift=12,
-            font=dict(size=12, color="black"),
-        )
-
     st.plotly_chart(fig, use_container_width=True)
 else:
     st.warning("This database needs columns named **Expiration** (Date) and **Profit/Loss** (Number).")
