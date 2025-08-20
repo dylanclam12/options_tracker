@@ -7,7 +7,7 @@ from notion_client import Client
 # On Streamlit Cloud, put these in Secrets (Settings → Secrets):
 # NOTION_TOKEN, NOTION_DATABASE_ID
 NOTION_TOKEN = st.secrets.get("NOTION_TOKEN", os.getenv("NOTION_TOKEN"))
-DB_ID = st.secrets.get("NOTION_DATABASE_ID", os.getenv("NOTION_DATABASE_ID"))
+DB_ID = st.secrets.get("PROFIT_LOSS", os.getenv("PROFIT_LOSS"))
 
 notion = Client(auth=NOTION_TOKEN)
 
