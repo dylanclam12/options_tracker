@@ -1,48 +1,141 @@
 <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-NVDA/?exchange=NASDAQ" rel="noopener nofollow" target="_blank"><span class="blue-text">NVDA chart by TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text">World markets</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
   {
-  "allow_symbol_change": true,
-  "calendar": false,
-  "details": false,
-  "hide_side_toolbar": true,
-  "hide_top_toolbar": false,
-  "hide_legend": true,
-  "hide_volume": true,
-  "hotlist": false,
-  "interval": "5",
-  "locale": "en",
-  "save_image": false,
-  "style": "1",
-  "symbol": "NASDAQ:NVDA",
-  "theme": "dark",
-  "timezone": "America/Los_Angeles",
+  "lineWidth": 2,
+  "lineType": 0,
+  "chartType": "area",
+  "showVolume": false,
+  "fontColor": "rgb(106, 109, 120)",
+  "gridLineColor": "rgba(242, 242, 242, 0.06)",
+  "volumeUpColor": "rgba(34, 171, 148, 0.5)",
+  "volumeDownColor": "rgba(247, 82, 95, 0.5)",
   "backgroundColor": "#0F0F0F",
-  "gridColor": "rgba(102, 187, 106, 0.06)",
-  "watchlist": [
-    "NASDAQ:AAPL",
-    "NASDAQ:AMD",
-    "NASDAQ:APP",
-    "NASDAQ:COIN",
-    "NYSE:CRCL",
-    "NASDAQ:CRWV",
-    "NYSE:FIG",
-    "NASDAQ:GOOG",
-    "NYSE:IONQ",
-    "NASDAQ:META",
-    "NASDAQ:MSFT",
-    "NASDAQ:MSTR",
-    "NASDAQ:NVDA",
-    "NASDAQ:PLTR",
-    "NYSE:RDDT",
-    "NASDAQ:TSLA"
+  "widgetFontColor": "#DBDBDB",
+  "upColor": "#22ab94",
+  "downColor": "#f7525f",
+  "borderUpColor": "#22ab94",
+  "borderDownColor": "#f7525f",
+  "wickUpColor": "#22ab94",
+  "wickDownColor": "#f7525f",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "locale": "en",
+  "chartOnly": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "symbols": [
+    [
+      "NASDAQ:AAPL|1D"
+    ]
+    [
+      "NASDAQ:AMD|1D"
+    ],
+    [
+      "NASDAQ:AMZN|1D"
+    ],
+    [
+      "NASDAQ:AVGO|1D"
+    ],
+    [
+      "NYSE:BE|1D"
+    ],
+    [
+      "NASDAQ:COIN|1D"
+    ],
+    [
+      "NYSE:CRCL|1D"
+    ],
+    [
+      "NASDAQ:CRWD|1D"
+    ],
+    [
+      "NASDAQ:CRWV|1D"
+    ],
+    [
+      "NYSE:DELL|1D"
+    ],
+    [
+      "NASDAQ:ETHA|1D"
+    ],
+    [
+      "NYSE:FIG|1D"
+    ],
+    [
+      "NASDAQ:GOOG|1D"
+    ],
+    [
+      "NASDAQ:HOOD|1D"
+    ],
+    [
+      "NASDAQ:IBIT|1D"
+    ],
+    [
+      "NYSE:IONQ|1D"
+    ],
+    [
+      "NASDAQ:IREN|1D"
+    ],
+    [
+      "NASDAQ:META|1D"
+    ],
+    [
+      "NASDAQ:MSFT|1D"
+    ],
+    [
+      "NASDAQ:MSTR|1D"
+    ],
+    [
+      "NASDAQ:NBIS|1D"
+    ],
+    [
+      "NASDAQ:NVDA|1D"
+    ],
+    [
+      "NYSE:OKLO|1D"
+    ],
+    [
+      "NYSE:ORCL|1D"
+    ],
+    [
+      "NASDAQ:PLTR|1D"
+    ],
+    [
+      "NYSE:RDDT|1D"
+    ],
+    [
+      "NASDAQ:RGTI|1D"
+    ],
+    [
+      "NASDAQ:RR|1D"
+    ],
+    [
+      "NYSE:VRT|1D"
+    ],
   ],
-  "withdateranges": true,
-  "compareSymbols": [],
-  "studies": [],
-  "autosize": true
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ],
+  "fontSize": "10",
+  "headerFontSize": "medium",
+  "autosize": true,
+  "dateFormat": "MMM dd, yyyy",
+  "width": "100%",
+  "height": "100%",
+  "noTimeScale": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false
 }
   </script>
 </div>
